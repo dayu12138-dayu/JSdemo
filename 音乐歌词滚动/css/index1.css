@@ -1,0 +1,364 @@
+ .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}   
+
+body {
+    background: #fff;
+    min-width: 1140px;
+}
+
+.container{
+    width:1140px;
+    margin:0 auto;
+    position: relative;
+}
+
+.container .head{
+    color:#fff;
+    font-size: 12px;
+    background: #2d5c88;
+    margin-left: -230px;
+    margin-right: -230px;
+}
+.container .head .none{
+    width: 230px;
+    box-sizing: border-box;
+}
+.container .head .left>div{
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container .head .left .naV:hover{
+    background:  rgba(255,255,255,.2);
+    transition: ease 1s;
+}
+
+.container .head .right{
+    width: 235px;
+    float: right;
+    margin: 4px 230px 4px 0;
+    background-color: rgba(255,255,255,.2);
+    font-size: 13px;
+}
+
+.container .head .right .tubiao{
+    line-height: 25px;
+    text-align: center;
+    float: left;
+    width: 30px;
+    height: 25px;
+}
+
+.container .head .right .tubiao:hover{
+    cursor: pointer;
+}
+
+.container .head .right .search{
+    float: left;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.container .center{
+    width: 1140px;
+    overflow: hidden;
+    position:absolute;
+}
+
+.container .center .Nav{
+    padding-top: 36px;
+
+}
+
+.container .center .Nav a{
+    float: right;
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.container .center .Nav div{
+    float:right;
+    width: 82.5px;
+    position: relative;
+}
+
+.container .center .Nav div>ul{
+    position: absolute;
+    width: 202px;
+    height: 0px;
+    box-sizing: border-box;
+    right: 0;
+    top: 53.64px;
+    overflow: hidden; 
+}
+
+.container .center .Nav div>ul>li{
+    float: left;
+    list-style:none ;
+    color: #555;
+    text-align: left;
+    font-size: 12px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(223, 219, 219);
+    line-height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.container .center .Nav div:hover ul{
+    display: block;
+    animation: mymove .5s ease;
+    animation-fill-mode: forwards;
+    background: #fff;
+    z-index: 5;
+}
+
+@keyframes mymove{
+    0%{height: 0px;}
+    100%{height: 80px;}
+}
+
+.container .center .Nav div>ul>li:hover,
+.container .center .Nav .virtue:hover,
+.container .center .Nav a:hover{
+    cursor: pointer;
+}
+
+.container .center .Nav div>ul>li:hover,
+.container .center .Nav a:hover{
+    color: #2d5c88;
+}
+
+.container .center .lunbo{
+    width: 3420px;
+    height: 400px;
+    /* position: relative; */
+    background-color: transparent;
+    /* top: 100px; */
+    animation: myfirst 7s infinite;
+}
+
+@keyframes myfirst{
+    0% {
+        transform:translateX(0px);
+    }
+    40% {
+        transform: translateX(-1140px);
+    }
+    100% {
+        transform: translateX(-2280px);
+    }
+}
+
+.container .center .lunbo img{
+    width: 1140px;
+    height: 400px;
+    float: left;
+    z-index: 9999;
+}
+
+.container .center .tubiao-right,
+.container .center .tubiao-left{
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 35px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    z-index: 10;
+    top: 250px;
+    opacity: 1;
+}
+
+.container .center .tubiao-right{
+    right: 5px;
+}
+
+.container .center .tubiao-left{
+    left: 5px;
+}
+
+.container .center .tubiao-right:hover,
+.container .center .tubiao-left:hover{
+    background:rgba(255, 255, 255, .8);
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.container .second{
+    position: absolute;
+    top: 570px;
+}
+
+.container .third .first,
+.container .second .first{
+    text-align: center;
+    width: 1140px;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 28px;
+    padding: 30px;
+}
+
+.container .second a img{
+    width: 367px;
+    height: 367px;
+    float: left;
+    cursor: pointer;
+}
+
+.container .second a .word{
+    position: absolute;
+    width: 367px;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+    color: #333;
+    background-color: rgba(255, 255, 255, .8);
+    top: 401px;
+    opacity: 0;
+}
+
+.container .second a:hover .word{
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.container .second a .word.word2{
+    left: 389px;
+}
+
+.container .second a .word.word3{
+    right: 56px;
+}
+
+.container .second a .select{
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.container .third .first{
+    position: absolute;
+    top: 1063px;
+}
+
+.container .third .four{
+    position: absolute;
+    top: 1151px;
+    width: 553px;
+    height: 223px;
+    border: 1px solid rgba(0, 0, 0,0.5);
+}
+
+.container .third .four .imG{
+    width: 220px;
+    height: 223px;
+    float: left;
+}
+
+.container .third .four .biao{
+    font-size: 24px;
+    color: #444;
+    float: left;
+    line-height: 30px;
+    width: 240px;
+    padding:28px 30px 0px 22px;
+}
+
+.container .third .four .Img{
+    float: left;
+    padding: 8px 200px 4px 22px;
+
+}
+
+.container .third .four p{
+    line-height: 20px;
+    font-size: 14px;
+    width: 300px;
+    height: 100px;
+    /* display: block; */
+    padding-left: 242px;
+    width: 300px;
+    height: 95px;
+    /* overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+}
+
+.container .third .four .Div{
+    position: absolute;
+    top: 18px;
+    right: 0px;
+    width: 70px;
+    height: 60px;
+    background:  rgba(0, 0, 0, 0.05);
+    font-size: 10px;
+    color: #777;
+
+}
+.container .third .four .Div .diV{
+    color: #777;
+    height: 29px;
+    width: 52px;
+    line-height: 29px;
+    text-align:center;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.container .third .four .Div .dIv{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.container .third .four p a{
+    color: #6c8dab;
+    font-size: 14px;
+}
+.container .third .four p a:hover{
+    color: #2d5c88;
+}
+
+.container .third .fourz{
+    position: absolute;
+    top: 1151px;
+    right: 0px;
+    width: 553px;
+    height: 223px;
+    border: 1px solid rgba(0, 0, 0,0.5);
+}
+.container .third .fourx{
+    position: absolute;
+    top: 1399px;
+    width: 553px;
+    height: 223px;
+    border: 1px solid rgba(0, 0, 0,0.5);
+}
+.container .third .foury{
+    position: absolute;
+    top: 1399px;
+    right: 0px;
+    width: 553px;
+    height: 223px;
+    border: 1px solid rgba(0, 0, 0,0.5);
+}
+/* .container .five{
+    margin-left: -230px;
+    margin-right: -230px;
+    height: 235px;
+    width: 1140px;
+    background: rgba(0, 0, 0,1); 
+    position: absolute;
+    top: 1680px;
+    left: 230px;
+} */
+
